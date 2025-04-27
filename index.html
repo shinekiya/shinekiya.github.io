@@ -30,7 +30,7 @@
     }
     /* 导航栏 */
     nav {
-      background: #032904;
+      background: #024c85;
       display: flex;
       justify-content: flex-start;
       gap: 100px;
@@ -49,7 +49,7 @@
     /* 动态内容区域，使用 iframe 加载下方内容 */
     #contentFrame {
       width: 100%;
-      height: 600px;  /* 根据需要可调整高度 */
+      height: 650px;  /* 根据需要可调整高度 */
       border: none;
       display: block;
     }
@@ -60,6 +60,28 @@
       text-align: center;
       padding: 20px 0;
     }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 100px 20px;/* 缩小顶部区域 */
+      }
+      header h1 {
+        font-size: 36px; /* 标题字体变小 */
+      }
+      nav {
+        flex-direction: column; /* 导航变成竖着排列，防止挤爆 */
+        align-items: flex-start;
+        padding-left: 20px;
+        gap: 20px;
+      }
+      nav a {
+        font-size: 18px; /* 导航文字缩小 */
+      }
+      #contentFrame {
+        height: 400px;/* iframe高度稍微调小点 */
+      }
+    }
+
   </style>
 
 </head>
