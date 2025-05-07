@@ -2,63 +2,17 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/stylehome.css" />
   <title>首页</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 20px;
-      background-color: #f4f4f4;
-      font-family: "Helvetica Neue", sans-serif;
-    }
-    .background-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("img/TempDragFile_20250427_122418(1).png") no-repeat center center;
-      background-size: cover;
-      z-index: -1;
-    }
-    .container {
-      display: flex;
-    }
-    .sidebar {
-      width: 250px;
-      border-right: 2px solid #ccc;
-      padding: 20px;
-    }
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      display: block;
-      margin: 0 auto 20px;
-      border: 4px solid white;
-    }
-    .sidebar h2 {
-      margin-top: 0;
-      text-align: center;
-    }
-    .main-content {
-      flex: 1;
-      padding: 40px;
-    }
-    .main-content h1,
-    .main-content h2 {
-      margin-top: 0;
-    }
-  </style>
 </head>
 <body>
   <dive class="background-overlay"></div>
   <div class="container">
+    <!-- 左侧个人信息 -->
     <div class="sidebar">
-      <!-- 请确保头像图片路径正确 -->
       <img src="img/illust_123238755_20250318_224029.png" alt="我的头像" class="profile-pic">
       <h2>个人信息</h2>
-      <p><strong>姓名：</strong>筱柒</p>
+      <p><strong>姓名：</strong>刘俊成</p>
       <p><strong>性别：</strong>男</p>
       <p><strong>出生日期：</strong>2004.9.23</p>
       <p><strong>邮箱：</strong>2937471733@qq.com</p>
@@ -66,6 +20,7 @@
       <p><strong>学校：</strong>山东科技大学（青岛）</p>
       <p><strong>学历：</strong>本科</p>
     </div>
+    <!-- 右方自我介绍 -->
     <div class="main-content">
       <h1>自我介绍</h1>
       <p>简直就是天才</p>

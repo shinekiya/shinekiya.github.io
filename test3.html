@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/styletest3.css" />
+  <title>实验三</title>
+
+</head>
+<body>
+  <h2>1. 拖动红色方块</h2>
+  <div id="dragBox"></div>
+
+  <h2>2. 显示 XML 中的书籍信息</h2>
+  <button onclick="loadBooks()">加载书籍信息</button>
+  <table id="bookTable"></table>
+
+  <h2>3. 下拉选择书籍</h2>
+  <select id="bookSelect" onchange="showSelectedBook(this.value)">
+    <option value="">请选择一本书</option>
+  </select>
+  <p id="bookInfo"></p>
+
+  <script src="js/script3.js"></script>
+</body>
+</html>

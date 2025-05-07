@@ -3,86 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/style.css" />
   <title>我的个人主页</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      font-family: "Helvetica Neue", sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-    /* 标题部分，添加背景图片 */
-    header {
-      background: url('img/1741660283663.jpg') no-repeat center center;
-      background-size: cover;
-      color: white;
-      text-align: center;
-      padding: 200px 100px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 60px;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-      font-family:"SimSun","宋体",cursive;
-    }
-    /* 导航栏 */
-    nav {
-      background: #024c85;
-      display: flex;
-      justify-content: flex-start;
-      gap: 100px;
-      padding: 20px 0;
-      padding-left: 80px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-size: 22px;
-      transition: all 0.3s ease;
-    }
-    nav a:hover {
-      transform: scale(1.1);
-    }
-    /* 动态内容区域，使用 iframe 加载下方内容 */
-    #contentFrame {
-      width: 100%;
-      height: 650px;  /* 根据需要可调整高度 */
-      border: none;
-      display: block;
-    }
-    /* 页脚 */
-    footer {
-      background: #222;
-      color: #aaa;
-      text-align: center;
-      padding: 20px 0;
-    }
-
-    @media (max-width: 768px) {
-      header {
-        padding: 100px 20px;/* 缩小顶部区域 */
-      }
-      header h1 {
-        font-size: 36px; /* 标题字体变小 */
-      }
-      nav {
-        flex-direction: column; /* 导航变成竖着排列，防止挤爆 */
-        align-items: flex-start;
-        padding-left: 20px;
-        gap: 20px;
-      }
-      nav a {
-        font-size: 18px; /* 导航文字缩小 */
-      }
-      #contentFrame {
-        height: 400px;/* iframe高度稍微调小点 */
-      }
-    }
-
-  </style>
 
 </head>
 <body>
@@ -96,16 +18,18 @@
     <a href="#" onclick="loadContent('home.html'); return false;">首页</a>
     <a href="https://www.sdust.edu.cn/" target="_blank">我的学校</a>
     <a href="#" onclick="loadContent('picture.html'); return false;">我的相册</a>
+    <a href="#" onclick="loadContent('test2.html'); return false;">实验二</a>
+    <a href="#" onclick="loadContent('test3.html'); return false;">实验三</a>
   </nav>
 
   <!-- 下方内容区域，默认加载首页 -->
   <iframe id="contentFrame" src="home.html"></iframe>
 
   <footer>
-    <p>&copy; 2025 筱柒. 保留所有权利。</p>
+    <p>&copy; 2025 刘俊成. 保留所有权利。</p>
   </footer>
 
-  <script src="js\script.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 </html>
