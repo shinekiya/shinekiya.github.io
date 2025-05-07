@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Helvetica Neue", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  /* 标题部分，添加背景图片 */
+  header {
+    background: url('../img/1741660283663.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 200px 100px;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-family:"SimSun","宋体",cursive;
+  }
+  /* 导航栏 */
+  nav {
+    background: #024c85;
+    display: flex;
+    justify-content: flex-start;
+    gap: 100px;
+    padding: 20px 0;
+    padding-left: 80px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: all 0.3s ease;
+  }
+  nav a:hover {
+    transform: scale(1.1);
+  }
+  /* 动态内容区域，使用 iframe 加载下方内容 */
+  #contentFrame {
+    width: 100%;
+    height: 650px;  /* 根据需要可调整高度 */
+    border: none;
+    display: block;
+  }
+  /* 页脚 */
+  footer {
+    background: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  @media (max-width: 768px) {
+    header {
+      padding: 100px 20px;/* 缩小顶部区域 */
+    }
+    header h1 {
+      font-size: 36px; /* 标题字体变小 */
+    }
+    nav {
+      flex-direction: column; /* 导航变成竖着排列，防止挤爆 */
+      align-items: flex-start;
+      padding-left: 20px;
+      gap: 20px;
+    }
+    nav a {
+      font-size: 18px; /* 导航文字缩小 */
+    }
+    #contentFrame {
+      height: 400px;/* iframe高度稍微调小点 */
+    }
+  }
